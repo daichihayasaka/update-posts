@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PostFormContainer from './containers/PostFormContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      postNum: '',
+    };
+  }
+
+  updatePostNum = (e) => {
+    this.setState({
+      postNum: e.target.value,
+    })
+  }
+
+  render() {
+    return (
+      <PostFormContainer
+        postNum={this.state.postNum}
+        updatePostNum={this.updatePostNum}
+      />
+    );
+  }
 }
 
 export default App;
