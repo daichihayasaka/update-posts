@@ -12,8 +12,8 @@ class App extends React.Component {
   updatePostNum = (e) => {
     this.setState({
       postNum: e.target.value,
-    })
-  }
+    });
+  };
 
   render() {
     return (

@@ -1,12 +1,10 @@
-export const getPostAction = (postState) => {
-  return {
+export const getPostAction = (postInfo) => ({
     type: 'post/update',
     payload: {
-      title: postState.title,
-      body: postState.body
-    }
-  }
-}
+      title: postInfo.title,
+      body: postInfo.body,
+    },
+});
 
 export const fetchPost = (postNum) => {
   return async (dispatch) => {
@@ -20,4 +18,4 @@ export const fetchPost = (postNum) => {
       body: body,
     }));
   }
-}
+};

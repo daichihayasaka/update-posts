@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { legacy_createStore as createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import { PostReducer } from './features/post/post-reducer'
+import { PostReducer } from './features/post/post-reducer';
 import thunk from 'redux-thunk';
 
 const store = createStore(

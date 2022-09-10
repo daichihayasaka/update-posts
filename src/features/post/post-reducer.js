@@ -10,4 +10,4 @@ export const PostReducer = (state = initialState.post, action) => {
     default:
       return state
   }
-}
+};
