@@ -16,6 +16,17 @@ const store = createStore(
   )
 );
 
+// export const store = createStore(
+//   combineReducers({
+//     PostReducer,
+//   }),
+//   applyMiddleware(
+//     thunk
+//   )
+// );
+
+store.getState()
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
