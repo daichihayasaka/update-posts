@@ -1,8 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/sync-and-async-with-connect/node_modules
-/sync-and-async-with-connect/node_modules
+/sync-without-connect/node_modules
+/sync-with-connect/node_modules
 /sync-and-async-with-connect/node_modules
 /.vscode
 
