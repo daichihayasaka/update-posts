@@ -1,17 +1,16 @@
 import { connect } from "react-redux";
-import { getPostAction, fetchPost } from "../features/post/post-action";
+import { getPostAction } from "../features/post/post-action";
 import PostForm from "../components/PostForm";
 
 const mapStateToProps = (state) => ({
-    post: state.post,
+  PostReducer: state.PostReducer,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    getPostSync: (postInfo) => dispatch(getPostAction(postInfo)),
-    getPostAsync: (postNum) => dispatch(fetchPost(postNum)),
+  getPostSync: (postInfo) => dispatch(getPostAction(postInfo)),
 });
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(PostForm);

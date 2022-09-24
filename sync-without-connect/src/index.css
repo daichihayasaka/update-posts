@@ -38,11 +38,11 @@ button {
 }
 
 .btn-reset {
-  background-color: rgb(0, 148, 131);
+  background-color: rgb(120, 110, 5);
 }
 
-.btn-async {
-  background-color: rgb(27, 98, 242);
+.btn-re-rendering {
+  background-color: rgb(0, 148, 131);
 }
 
 .posts-wrapper {

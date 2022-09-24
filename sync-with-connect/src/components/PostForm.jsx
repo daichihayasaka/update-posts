@@ -1,34 +1,25 @@
-// import { store } from "../index";
-// import { getPostAction } from "../features/post/post-action";
-
 const PostForm = (props) => {
-  // console.log(111, store.getState());
   return (
     <>
       <div className="input-wrapper">
-        <input type="number" value={props.postNum} onChange={props.updatePostNum} />
-
         <button
           className="btn-sync"
           onClick={() => props.getPostSync({title: 'タイトル', body: '同期的に更新した本文。同期的に更新した本文。'})}
-          // onClick={() => store.dispatch(getPostAction({title: 'タイトル', body: '同期的に更新した本文。同期的に更新した本文。'}))}
         >
           更新 (同期)
         </button>
 
         <button
-          className="btn-async"
-          onClick={() => props.getPostAsync(props.postNum)}
+          className="btn-reset"
+          onClick={() => props.getPostSync({})}
         >
-          更新 (非同期)
+          リセット
         </button>
       </div>
       
       <div className="posts-wrapper">
-        <h1>{props.post.title}</h1>
-        <p>{props.post.body}</p>
-        {/* <h1>{store.getState().title}</h1>
-        <h1>{store.getState().body}</h1> */}
+        <h1>{props.PostReducer.title}</h1>
+        <p>{props.PostReducer.body}</p>
       </div>
     </>
   );
