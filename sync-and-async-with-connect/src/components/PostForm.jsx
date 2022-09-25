@@ -2,7 +2,7 @@ const PostForm = (props) => {
   return (
     <>
       <div className="input-wrapper">
-        <input type="number" value={props.postNum} onChange={props.updatePostNum} />
+        <input type="number" value={props.postNum} onChange={props.updatePostNum} min={1} />
 
         <button
           className="btn-sync"

@@ -21,7 +21,7 @@ const PostForm = (props) => {
 
         <button
           className="btn-re-rendering"
-          onClick={props.stateUpdater}
+          onClick={props.handleUpdater}
         >
           再レンダリング
         </button>

@@ -9,7 +9,7 @@ class App extends React.Component {
     };
   }
 
-  stateUpdater = () => {
+  handleUpdater = () => {
     this.setState({
       updater: !this.state.updater,
     })
@@ -17,7 +17,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <PostForm stateUpdater={this.stateUpdater} />
+      <PostForm handleUpdater={this.handleUpdater} />
     );
   }
 }
