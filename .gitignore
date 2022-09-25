@@ -3,7 +3,7 @@
 # dependencies
 /sync-without-connect/node_modules
 /sync-with-connect/node_modules
-/sync-and-async-with-connect/node_modules
+/async-with-connect/node_modules
 /.vscode
 
 # /.pnp

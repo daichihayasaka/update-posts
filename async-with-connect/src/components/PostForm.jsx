@@ -5,17 +5,17 @@ const PostForm = (props) => {
         <input type="number" value={props.postNum} onChange={props.updatePostNum} min={1} />
 
         <button
-          className="btn-sync"
-          onClick={() => props.getPostSync({title: 'タイトル', body: '同期的に更新した本文。同期的に更新した本文。'})}
-        >
-          更新 (同期)
-        </button>
-
-        <button
           className="btn-async"
           onClick={() => props.getPostAsync(props.postNum)}
         >
           更新 (非同期)
+        </button>
+
+        <button
+          className="btn-reset"
+          onClick={() => props.getPostSync({})}
+        >
+          リセット
         </button>
       </div>
       

@@ -29,7 +29,7 @@ const PostForm = (props) => {
       
       <div className="posts-wrapper">
         <h1>{store.getState().title}</h1>
-        <h1>{store.getState().body}</h1>
+        <p>{store.getState().body}</p>
       </div>
     </>
   );

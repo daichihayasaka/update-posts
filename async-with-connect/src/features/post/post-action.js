@@ -7,6 +7,7 @@ export const getPostAction = (postInfo) => ({
 });
 
 export const fetchPost = (postNum) => {
+  // 関数を `return` してる
   return async (dispatch) => {
     const baseUrl = 'https://jsonplaceholder.typicode.com/posts/'
     const id = postNum;
