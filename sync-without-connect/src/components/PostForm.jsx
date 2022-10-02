@@ -1,5 +1,5 @@
 import { store } from "../index";
-import { getPostAction } from "../features/post/post-action";
+import { updatePostAction } from "../features/post/post-action";
 
 const PostForm = (props) => {
   return (
@@ -7,14 +7,14 @@ const PostForm = (props) => {
       <div className="input-wrapper">
         <button
           className="btn-sync"
-          onClick={() => store.dispatch(getPostAction({title: 'タイトル', body: '同期的に更新した本文。同期的に更新した本文。'}))}
+          onClick={() => store.dispatch(updatePostAction({title: 'タイトル', body: '同期的に更新した本文。同期的に更新した本文。'}))}
         >
           更新 (同期)
         </button>
 
         <button
           className="btn-reset"
-          onClick={() => store.dispatch(getPostAction({}))}
+          onClick={() => store.dispatch(updatePostAction({ title: '', body: '' }))}
         >
           リセット
         </button>

@@ -4,14 +4,14 @@ const PostForm = (props) => {
       <div className="input-wrapper">
         <button
           className="btn-sync"
-          onClick={() => props.getPostSync({title: 'タイトル', body: '同期的に更新した本文。同期的に更新した本文。'})}
+          onClick={() => props.updatePostSync({title: 'タイトル', body: '同期的に更新した本文。同期的に更新した本文。'})}
         >
           更新 (同期)
         </button>
 
         <button
           className="btn-reset"
-          onClick={() => props.getPostSync({})}
+          onClick={() => props.updatePostSync({ title: '', body: '' })}
         >
           リセット
         </button>

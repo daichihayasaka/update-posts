@@ -1,4 +1,4 @@
-export const getPostAction = (postInfo) => ({
+export const updatePostAction = (postInfo) => ({
     type: 'post/update',
     payload: {
       title: postInfo.title,

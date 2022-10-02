@@ -2,14 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { legacy_createStore as createStore, combineReducers } from 'redux';
+import { legacy_createStore as createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { PostReducer } from './features/post/post-reducer';
+import thunk from 'redux-thunk';
 
-export const store = createStore(
+const store = createStore(
   combineReducers({
-    PostReducer,
-  })
+    post: PostReducer,
+  }),
+  applyMiddleware(
+    thunk
+  )
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

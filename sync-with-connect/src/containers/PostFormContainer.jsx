@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { getPostAction } from "../features/post/post-action";
+import { updatePostAction } from "../features/post/post-action";
 import PostForm from "../components/PostForm";
 
 const mapStateToProps = (state) => ({
@@ -7,7 +7,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  getPostSync: (postInfo) => dispatch(getPostAction(postInfo)),
+  updatePostSync: (postInfo) => dispatch(updatePostAction(postInfo)),
 });
 
 export default connect(
