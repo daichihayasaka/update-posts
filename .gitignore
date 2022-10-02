@@ -5,6 +5,7 @@
 /sync-with-connect/node_modules
 /async-with-connect/node_modules
 /async-with-hooks/node_modules
+/async-with-hooks-and-tookit/node_modules
 /.vscode
 
 # /.pnp
