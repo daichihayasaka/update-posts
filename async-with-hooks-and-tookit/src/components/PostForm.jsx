@@ -1,4 +1,7 @@
+import { store } from "../index";
+
 const PostForm = (props) => {
+  console.log(store.getState());
   return (
     <>
       <div className="input-wrapper">

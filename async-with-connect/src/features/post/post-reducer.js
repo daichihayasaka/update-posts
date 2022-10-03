@@ -1,6 +1,6 @@
-const initialState = { post: { title: '', body: '' } };
+const initialState = { title: '', body: '' };
 
-export const PostReducer = (state = initialState.post, action) => {
+export const PostReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'post/update':
       return {

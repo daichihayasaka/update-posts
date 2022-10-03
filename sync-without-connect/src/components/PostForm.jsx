@@ -2,6 +2,7 @@ import { store } from "../index";
 import { updatePostAction } from "../features/post/post-action";
 
 const PostForm = (props) => {
+  console.log(store.getState());
   return (
     <>
       <div className="input-wrapper">

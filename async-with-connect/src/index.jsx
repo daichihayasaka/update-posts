@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { PostReducer } from './features/post/post-reducer';
 import thunk from 'redux-thunk';
 
-const store = createStore(
+export const store = createStore(
   combineReducers({
     post: PostReducer,
   }),

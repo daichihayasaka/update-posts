@@ -1,12 +1,10 @@
-import { useDispatch, useSelector, useStore } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { postSlice, fetchPost } from "../features/post";
 import PostForm from "../components/PostForm";
 
 const EnhancedPostForm = (props) => {
   const post = useSelector((state) => state.post);
   const dispatch = useDispatch();
-
-  console.log(useStore().getState());
 
   return (
     <PostForm
